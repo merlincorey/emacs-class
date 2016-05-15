@@ -1,5 +1,5 @@
 * History of emacs
-
+  
 ** Who
 
 Carl Mikkelson added display-editing to teco. 
@@ -30,7 +30,7 @@ Why not?
 
 ** Pictars
 
-Serious hardware runs emacs in microcode on the processor: [[./images/symmbolics-lisp-machine-poster][Lisp Machine Poster]]
+Serious hardware runs emacs in microcode on the processor: [[./images/symbolics-lisp-machine-poster.jpg][Lisp Machine Poster]]
 
 The [[./images/space-cadet-keyboard.jpg][Space Cadet Keyboard]] had quite a few interesting keys and modifiers.
 
