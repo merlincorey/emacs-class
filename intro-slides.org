@@ -2,10 +2,10 @@
   
 ** Who
 
-Carl Mikkelson added display-editing to teco. 
-Richard Stallman added macro capabilities to teco.
-Richard Stallman collected the first group of teco programs.
-Eugene Ciccarelli wrote the first introduction to emacs.
+- Carl Mikkelson added display-editing to teco. 
+- Richard Stallman added macro capabilities to teco.
+- Richard Stallman collected the first group of teco programs.
+- Eugene Ciccarelli wrote the first introduction to emacs.
 
 ** What
 
@@ -15,11 +15,11 @@ The machines in question were mainframes and other large machines with shared ti
 
 ** When
 
-*** Mikkelson: 1972
-*** Stallman: 1974
-*** Stallman: 1976
-*** Ciccarelli: 1978
-   
+- Mikkelson  :: 1972
+- Stallman   :: 1974
+- Stallman   :: 1976
+- Ciccarelli :: 1978
+
 ** Where
 
 MIT's AI lab (SAIL)
