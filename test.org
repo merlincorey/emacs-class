@@ -1,0 +1,27 @@
+
+* Top level heading
+
+Stuff underneath
+
+** Next level heading
+
+More stuff underneath
+
+** This one
+
+
+
+* Tasks
+
+Next section
+
+** DONE Take out the trash
+   CLOSED: [2016-05-14 Sat 16:31]
+** DONE Clean the bathroom
+   CLOSED: [2016-05-14 Sat 16:31]
+** DONE Play mariokart
+   CLOSED: [2016-05-14 Sat 16:31]
+
+[[http://www.google.com][Text]]
+
+** TODO Start task for customer 
