@@ -2,10 +2,10 @@
   
 ** Who
 
-Carl Mikkelson added display-editing to teco. 
-Richard Stallman added macro capabilities to teco.
-Richard Stallman collected the first group of teco programs.
-Eugene Ciccarelli wrote the first introduction to emacs.
+- Carl Mikkelson added display-editing to teco. 
+- Richard Stallman added macro capabilities to teco.
+- Richard Stallman collected the first group of teco programs.
+- Eugene Ciccarelli wrote the first introduction to emacs.
 
 ** What
 
@@ -15,11 +15,11 @@ The machines in question were mainframes and other large machines with shared ti
 
 ** When
 
-*** Mikkelson: 1972
-*** Stallman: 1974
-*** Stallman: 1976
-*** Ciccarelli: 1978
-   
+- Mikkelson  :: 1972
+- Stallman   :: 1974
+- Stallman   :: 1976
+- Ciccarelli :: 1978
+
 ** Where
 
 MIT's AI lab (SAIL)
@@ -50,13 +50,13 @@ Emacs can run in a terminal or graphical windowed environment.
 
 Emacs tutorial can be entered with:
 
-   C-h t        Start to tutorial
+- C-h t :: Start to tutorial
 
-"C-c" means to hold CONTROL and press "c"
+- "C-c" :: hold CONTROL and press "c"
    
-"C-x" means to hold CONTROL and press "x"
+- "C-x" :: to hold CONTROL and press "x"
 
-"M-x" means to hold META and "x" or press ESCAPE then "x"
+- "M-x" :: to hold META and "x" or press ESCAPE then "x"
 
 Remember the [[./images/space-cadet-keyboard.jpg][Space Cadet Keyboard]].
 
@@ -65,18 +65,15 @@ Keep a list of 5-10 commands you are learning and work on them only.
 
 ** Early useful keybindings to choose from
 
-   C-x C-c      Quit
-   C-x C-f      Open file
-   C-x k        Kill buffer (close it)
-   C-x C-s      Save current buffer
-   C-x s        Save dirty buffers
-
-   C-x b        Switch buffers
-   M-x          Run emacs lisp function
-
-   C-g          "Quit" current command, spam if troubled
-
-   C-x C-e      Evaluate lisp expression before cursor
+- C-x C-c :: Quit
+- C-x C-f :: Open file
+- C-x k   :: Kill buffer (close it)
+- C-x C-s :: Save current buffer
+- C-x s   :: Save dirty buffers
+- C-x b   :: Switch buffers
+- M-x     :: Run emacs lisp function
+- C-g     :: "Quit" current command, spam if troubled
+- C-x C-e :: Evaluate lisp expression before cursor
 
 * Windows, buffers, and rings 
 
@@ -84,25 +81,25 @@ Keep a list of 5-10 commands you are learning and work on them only.
 
 These are commands that deal with managing or creating windows in emacs
 
-   C-x o        "Other" window
-   C-x 0        Destroy window
-   C-x 1        Destroy other windows
-   C-x 2        Horizontal split window
-   C-x 3        Vertical split window
+- C-x o :: "Other" window
+- C-x 0 :: Destroy window
+- C-x 1 :: Destroy other windows
+- C-x 2 :: Horizontal split window
+- C-x 3 :: Vertical split window
 
 ** Window commands
 
 These are commands for working within a window in emacs
 
-   C-a          Beginning of line
-   C-e          End of line
-   C-v          Scroll page down
-   M-v          Scroll page up
-   M-<          Top of buffer (meta+shift+',')
-   M->          End of buffer (meta+shift+'.')
-   C-l          Arrange buffer centered on line or top on line
-   C-s          Search forward incremental
-   C-r          Search reverse incremental
+- C-a :: Beginning of line
+- C-e :: End of line
+- C-v :: Scroll page down
+- M-v :: Scroll page up
+- M-< :: Top of buffer (meta+shift+',')
+- M-> :: End of buffer (meta+shift+'.')
+- C-l :: Arrange buffer centered on line or top on line
+- C-s :: Search forward incremental
+- C-r :: Search reverse incremental
 
 ** Editing commands
 
@@ -110,12 +107,12 @@ These are commands for working with buffers and rings.
 Copied and cut text goes into the kill ring.
 Actions for undoing are also stored in a ring.
 
-   C-SPACE      Set Mark (begin selection)
-   C-w          Cut text
-   M-w          Copy text
-   C-y          Paste or "yank"
-   C-k          Cut ("kill") from cursor to end of line
-   C-x u        Undo
+- C-SPACE :: Set Mark (begin selection)
+- C-w     :: Cut text
+- M-w     :: Copy text
+- C-y     :: Paste or "yank"
+- C-k     :: Cut ("kill") from cursor to end of line
+- C-x u   :: Undo
 
 * Macros and elisp
 
@@ -123,20 +120,20 @@ ELISP code can be written and executed in any buffer.  Keyboard macros can be sa
 
 ** Keyboard macros
 
-   C-x (       Start keyboard macro
-   C-x )       End keyboard macro
-   C-x e       Execute keyboard macro
+- C-x ( :: Start keyboard macro
+- C-x ) :: End keyboard macro
+- C-x e :: Execute keyboard macro
 
 ** ELISP
 
-   C-x C-e     Execute elisp expression before cursor
+- C-x C :: Execute elisp expression before cursor
 
 
 * Configuration files
 
 Emacs is configured with emacs-lisp code in the ".emacs" file.
 
-Steve Yegge's blog posts on Emacs and its configuration are very useful and were the original guide for my example configuration in ./dotemacs/
+Steve Yegge's blog posts on Emacs and its configuration are very useful and were the original guide for my example configuration in [[./dotemacs/]]
 
 * Emacs package management
 
