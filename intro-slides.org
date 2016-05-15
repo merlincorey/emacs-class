@@ -133,7 +133,7 @@ ELISP code can be written and executed in any buffer.  Keyboard macros can be sa
 
 Emacs is configured with emacs-lisp code in the ".emacs" file.
 
-Steve Yegge's blog posts on Emacs and its configuration are very useful and were the original guide for my example configuration in ./dotemacs/
+Steve Yegge's blog posts on Emacs and its configuration are very useful and were the original guide for my example configuration in [[./dotemacs/]]
 
 * Emacs package management
 
