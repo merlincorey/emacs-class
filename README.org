@@ -1,5 +1,43 @@
-* emacs-class
+* Emacs Class by Merlin Corey
 
-Emacs class notes, scripts, and examples.
+  Emacs class notes, scripts, and examples.
 
-Example configuration tree in [[./dotemacs/]] installable with `sh [[./dotemacs/installer.sh][installer.sh]]`
+  Example configuration tree in [[./dotemacs/]] installable with =sh [[./dotemacs/installer.sh][installer.sh]]=.
+
+** History
+
+   Merlin has given this class a couple of times at Null Space Labs.
+
+   | Class                 | Location            | Date             |
+   |-----------------------+---------------------+------------------|
+   | [[https://www.meetup.com/NullSpaceLabs/events/230325844/][Intro to Emacs]]        | Null Space Labs 2.0 | 2016 May 14      |
+   | [[https://www.meetup.com/NullSpaceLabs/events/244979379/][Introduction to Emacs]] | Null Space Labs 3.0 | 2017 November 25 |
+
+* Presentation
+
+  Emacs is used for presentation with =org-present-mode=.
+
+  Org files are exported to HTML as well and thus readable [[http://merlincorey.github.io/emacs-class/README.html][on merlincorey.github.io]].
+
+** References
+
+*** [[http://sachachua.com/blog/2013/04/how-to-present-using-org-mode-in-emacs/][How to present using Org-mode in Emacs]] :2013:sacha:chua:emacs:org:mode:how:to:presentation:slides:
+
+    Some good notes on Emacs presentations from a well known emacs user who [[https://gist.github.com/sachac/5278905][presented with org-mode at EmacsConf 2013]].
+
+*** [[https://github.com/rlister/org-present][org-present-mode]] :2014:emacs:org:present:mode:org:mode:presentation:slides:
+
+    This is the presentation mode that Merlin used for at least the first two classes.
+
+*** [[https://www.emacswiki.org/emacs/EmacsPresentation][EmacsWiki :: EmacsPresentation]] :2015:emacs:wiki:org:mode:presentation:slides:
+
+    A collection of stories about using Emacs for presentation with various modes.
+
+    Merlin uses =org-present-mode= but has played with =org-presie= as well.
+
+*** [[https://github.com/robrohan/bestowed][Bestowed - Extremely simple presentation (ppt, keynote, etc) framework for org-mode export]]
+
+    Framework to add theming and javascript presentation to org-mode HTML export.
+* [[./intro-slides.org][intro-slides.org]] [[./intro-slides.html][(intro-slides.html)]]
+
+  The Introduction to Emacs class slides.
