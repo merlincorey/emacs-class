@@ -1,178 +1,178 @@
+* History of editors
+
+** qed 
+
 * History of emacs
   
 ** Who
-
-- Carl Mikkelson added display-editing to teco. 
-- Richard Stallman added macro capabilities to teco.
-- Richard Stallman collected the first group of teco programs.
-- Eugene Ciccarelli wrote the first introduction to emacs.
+   
+   - Carl Mikkelson :: added display-editing to teco. 
+   - Richard Stallman :: added macro capabilities to teco.
+   - Richard Stallman :: collected the first group of teco programs.
+   - Eugene Ciccarelli :: wrote the first introduction to emacs.
 
 ** What
 
-Emacs was based on teco, an editor for the ITS at MIT's AI lab. and "E"ditor "MAC"ros.
+   Emacs was based on teco, an editor for the ITS at MIT's AI lab. and "E"ditor "MAC"ros.
 
-The machines in question were mainframes and other large machines with shared time access.
+   The machines in question were mainframes and other large machines with shared time access.
 
 ** When
 
-- Mikkelson  :: 1972
-- Stallman   :: 1974
-- Stallman   :: 1976
-- Ciccarelli :: 1978
+   - Mikkelson  :: 1972
+   - Stallman   :: 1974
+   - Stallman   :: 1976
+   - Ciccarelli :: 1978
 
 ** Where
 
-MIT's AI lab (SAIL)
+   MIT's AI lab (SAIL)
 
 ** Why
 
-Why not?
+   Why not?
+
+   
 
 ** Pictars
 
-Serious hardware runs emacs in microcode on the processor: [[./images/symbolics-lisp-machine-poster.jpg][Lisp Machine Poster]]
+   Serious hardware runs emacs in microcode on the processor: [[./images/symbolics-lisp-machine-poster.jpg][Lisp Machine Poster]]
 
-The [[./images/space-cadet-keyboard.jpg][Space Cadet Keyboard]] had quite a few interesting keys and modifiers.
+   The [[./images/space-cadet-keyboard.jpg][Space Cadet Keyboard]] had quite a few interesting keys and modifiers.
 
-[[./images/symbolics-lisp-nerd.jpg][This nerd]] is representative of the community using them.
+   [[./images/symbolics-lisp-nerd.jpg][This nerd]] is representative of the community using them.
 
-Emacs can be used for [[./images/emacs-video-editing.png][video editing]] in a graphical environment.
+   Emacs can be used for [[./images/emacs-video-editing.png][video editing]] in a graphical environment.
 
-Traditional [[./images/emacs-c-ide.jpg][C IDEs]] can be emulated in emacs as well, with integrated debugging, source control, etc.
+   Traditional [[./images/emacs-c-ide.jpg][C IDEs]] can be emulated in emacs as well, with integrated debugging, source control, etc.
 
-Datadog released [[./images/datadog-mode.png][Datadog Mode]] for monitoring datadog alert streams in emacs.
+   Datadog released [[./images/datadog-mode.png][Datadog Mode]] for monitoring datadog alert streams in emacs.
 
 * Basic editing commands and common keybindings
-
 ** Start emacs with `emacs` or `emacs -nw` for non-windowed mode
 
-Emacs can run in a terminal or graphical windowed environment.
+   Emacs can run in a terminal or graphical windowed environment.
 
-Emacs tutorial can be entered with:
+   Emacs tutorial can be entered with:
 
-- C-h t :: Start to tutorial
+   - C-h t :: Start to tutorial
+   - "C-c" :: hold CONTROL and press "c"     
+   - "C-x" :: to hold CONTROL and press "x"
+   - "M-x" :: to hold META and "x" or press ESCAPE then "x"
 
-- "C-c" :: hold CONTROL and press "c"
-   
-- "C-x" :: to hold CONTROL and press "x"
+   Remember the [[./images/space-cadet-keyboard.jpg][Space Cadet Keyboard]].
 
-- "M-x" :: to hold META and "x" or press ESCAPE then "x"
-
-Remember the [[./images/space-cadet-keyboard.jpg][Space Cadet Keyboard]].
-
-
-Keep a list of 5-10 commands you are learning and work on them only.
+   Keep a list of 5-10 commands you are learning and work on them only.
 
 ** Early useful keybindings to choose from
 
-- C-x C-c :: Quit
-- C-x C-f :: Open file
-- C-x k   :: Kill buffer (close it)
-- C-x C-s :: Save current buffer
-- C-x s   :: Save dirty buffers
-- C-x b   :: Switch buffers
-- M-x     :: Run emacs lisp function
-- C-g     :: "Quit" current command, spam if troubled
-- C-x C-e :: Evaluate lisp expression before cursor
+   - =C-x C-c= :: Quit
+   - =C-x C-f= :: Open file
+   - =C-x k=   :: Kill buffer (close it)
+   - =C-x C-s= :: Save current buffer
+   - =C-x s=   :: Save dirty buffers
+   - =C-x b=   :: Switch buffers
+   - =M-x=     :: Run emacs lisp function
+   - =C-g=     :: "Quit" current command, spam if troubled
+   - =C-x C-e= :: Evaluate lisp expression before cursor
 
 * Windows, buffers, and rings 
-
 ** Windowing commands
 
-These are commands that deal with managing or creating windows in emacs
+   These are commands that deal with managing or creating windows in emacs
 
-- C-x o :: "Other" window
-- C-x 0 :: Destroy window
-- C-x 1 :: Destroy other windows
-- C-x 2 :: Horizontal split window
-- C-x 3 :: Vertical split window
+   - =C-x o= :: "Other" window
+   - =C-x 0= :: Destroy window
+   - =C-x 1= :: Destroy other windows
+   - =C-x 2= :: Horizontal split window
+   - =C-x 3= :: Vertical split window
 
 ** Window commands
 
-These are commands for working within a window in emacs
+   These are commands for working within a window in emacs
 
-- C-a :: Beginning of line
-- C-e :: End of line
-- C-v :: Scroll page down
-- M-v :: Scroll page up
-- M-< :: Top of buffer (meta+shift+',')
-- M-> :: End of buffer (meta+shift+'.')
-- C-l :: Arrange buffer centered on line or top on line
-- C-s :: Search forward incremental
-- C-r :: Search reverse incremental
+   - =C-a= :: Beginning of line
+   - =C-e= :: End of line
+   - =C-v= :: Scroll page down
+   - =M-v= :: Scroll page up
+   - =M-<= :: Top of buffer (meta+shift+',')
+   - =M->= :: End of buffer (meta+shift+'.')
+   - =C-l= :: Arrange buffer centered on line or top on line
+   - =C-s= :: Search forward incremental
+   - =C-r= :: Search reverse incremental
 
 ** Editing commands
 
-These are commands for working with buffers and rings.
-Copied and cut text goes into the kill ring.
-Actions for undoing are also stored in a ring.
+   These are commands for working with buffers and rings.
+   Copied and cut text goes into the kill ring.
+   Actions for undoing are also stored in a ring.
 
-- C-SPACE :: Set Mark (begin selection)
-- C-w     :: Cut text
-- M-w     :: Copy text
-- C-y     :: Paste or "yank"
-- C-k     :: Cut ("kill") from cursor to end of line
-- C-x u   :: Undo
+   - =C-SPACE= :: Set Mark (begin selection)
+   - =C-w=     :: Cut text
+   - =M-w=     :: Copy text
+   - =C-y=     :: Paste or "yank"
+   - =C-k=     :: Cut ("kill") from cursor to end of line
+   - =C-x u=   :: Undo
 
 * Macros and elisp
 
-ELISP code can be written and executed in any buffer.  Keyboard macros can be saved in configuration as emacs-lisp with special syntax.
+  ELISP code can be written and executed in any buffer.  Keyboard macros can be saved in configuration as emacs-lisp with special syntax.
 
 ** Keyboard macros
 
-- C-x ( :: Start keyboard macro
-- C-x ) :: End keyboard macro
-- C-x e :: Execute keyboard macro
+   - =C-x (= :: Start keyboard macro
+   - =C-x )= :: End keyboard macro
+   - =C-x e= :: Execute keyboard macro
 
 ** ELISP
 
-- C-x C :: Execute elisp expression before cursor
-
+   - =C-x C= :: Execute elisp expression before cursor
 
 * Configuration files
 
-Emacs is configured with emacs-lisp code in the ".emacs" file.
+  Emacs is configured with emacs-lisp code in the ".emacs" file.
 
-Steve Yegge's blog posts on Emacs and its configuration are very useful and were the original guide for my example configuration in [[./dotemacs/]]
+  Steve Yegge's blog posts on Emacs and its configuration are very useful and were the original guide for my example configuration in [[./dotemacs/]]
 
 * Emacs package management
 
-Emacs, since version 24, comes with ELPA the Emacs Lisp Package Archive support.
+  Emacs, since version 24, comes with ELPA the Emacs Lisp Package Archive support.
 
-You can use the package manager by executing `M-x list-packages` and then searching and selecting packages for install.
+  You can use the package manager by executing `M-x list-packages` and then searching and selecting packages for install.
 
-There are multiple repositories of packages available which can extend the packages available to you, but require manual installation.
+  There are multiple repositories of packages available which can extend the packages available to you, but require manual installation.
 
 * Tour of Modes including but not limited to:
+** Games and toys
 
-** Games and toys 
+   Such as =M-x dunnet=, =M-x snake=, =M-x tetris=, and =M-x butterfly= ([[https://xkcd.com/378/][butterfly]]).
 
-Such as snake, tetris, and [[https://xkcd.com/378/][butterfly]].
-
-** C-mode, python-mode, lisp-mode, etc
-
-Various programming language syntax highlighting and indention modes.
-
-** directory editor (aka, dired) 
-
-Manage directories and permissions from within emacs.
-
-** man and info
-
-Read system man and info pages in emacs.
+*** [[https://www.emacswiki.org/emacs/CategoryGames][EmacsWiki :: CategoryGames]] :emacs:wiki:games:and:amusements:
 
 ** artist-mode
 
-Draw pretty pictures in emacs!
+   Draw pretty pictures in emacs!
+
+** C-mode, python-mode, lisp-mode, etc
+
+   Various programming language syntax highlighting and indention modes.
+
+** directory editor (aka, dired) 
+
+   Manage directories and permissions from within emacs.
+
+** man and info
+
+   Read system man and info pages in emacs.
 
 ** org-mode for organization and presentation
 
-Outlining taken to the extreme providing wiki-like and productivity related functionality to emacs including task lists and time tracking.
+   Outlining taken to the extreme providing wiki-like and productivity related functionality to emacs including task lists and time tracking.
 
 ** shell and remote access modes
 
-Emacs can use TRAMP mode to open files on remote machines over various protocols, even as root with sudo or other users.
+   Emacs can use TRAMP mode to open files on remote machines over various protocols, even as root with sudo or other users.
 
 ** full IDE modes (specifically, SLIME) 
 
-Face down, code up.
+   Face down, code up.
