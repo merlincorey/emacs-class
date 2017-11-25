@@ -38,6 +38,6 @@
 *** [[https://github.com/robrohan/bestowed][Bestowed - Extremely simple presentation (ppt, keynote, etc) framework for org-mode export]]
 
     Framework to add theming and javascript presentation to org-mode HTML export.
-* [[./intro-slides.org][intro-slides.org]] [[./intro-slides.html][(intro-slides.html)]]
+* [[./intro-slides.org][intro-slides]]
 
   The Introduction to Emacs class slides.
