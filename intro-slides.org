@@ -1,6 +1,53 @@
-* History of editors
+* Primordial history of editors
 
-** qed 
+** teco
+
+   Dan Murphy released =TECO= in *1962* for the [[https://en.wikipedia.org/wiki/PDP-5][PDP-5]] (the world's first _12 bit_ computer).
+   =TECO= is not just an editor, but also a _syntax-less imperative programming language_ with *macro support*.
+
+   - TECO :: [paper] Tape Editor and COrrector
+   - TECO :: Text Editor and COrrector
+   - TECO :: Text Editor Character Oriented
+
+** qed
+
+   *Berkeley* =qed= was character oriented whilst *MIT* =qed= was line oriented.
+   Both supported multiple buffers, copy, paste, search, and replace.
+   Used for scripting and had *macro* support.
+
+   - Berkeley =qed= :: Lampson and Deutsch wrote for Berkely time-sharing system on the [[https://en.wikipedia.org/wiki/SDS_940][SDS 940 mainframe]] and published in [[https://cacm.acm.org/magazines/1967][1967 December Communications of the ACM]]
+   - MIT =qed= :: Ken Thompson wrote for MIT CTSS in IBM 7090 assembly, *introducing regular expressions*, published in the [[https://cacm.acm.org/magazines/1968][1968 June Communications of the ACM]], awarded =US Patent #3568156=
+   - Bell Labs =qed= :: Dennis Ritchie wrote for GE-TSS in assembly with fancy (complicated) regular expression support, published in the [[https://www.bell-labs.com/usr/dmr/www/qedman.pdf][1970 June manpage memo]]
+   - Bell Labs =bqed= :: Jay Michlin wrote for IBM TSO in *1973* and released to the public by *1974*
+
+* Early evolution of editors
+
+** ed
+
+   Ken Thompson, originally in *1969*, wrote =ed=, [[https://www.gnu.org/fun/jokes/ed-msg.html][ed is the stanard editor]], for the [[https://en.wikipedia.org/wiki/PDP-7][PDP-7 minicomputer]] along with =as=, the assembler, and =sh=, the shell.
+   This simplified things by dispensing with advanced regular expression features and multiple buffers.
+   Later versions would be written by Ritchie in the _high level_ programming language =C=.
+
+** emacs
+
+   Carl Mikkelson in *1972* produced the first collection of =TECO= EDitor MACroS.
+
+** vi
+
+   Bill Joy in *1976* wrote =vi=, bringing a visual mode based on =em= to =ed=.
+
+** ex
+   
+   #+CAPTION: Dennis Ritchie on vi
+   #+BEGIN_QUOTE
+   The same program, under the name ex, works better on typewriter-like terminals; aside from some fancier commands and better diagnostics, it's essentially ed.
+   #+END_QUOTE
+
+* Historical References
+
+** [[https://www.bell-labs.com/usr/dmr/www/qed.html][An incomplete history of the QED Text Editor]] :dennis:ritchie:unix:history:qed:ed:vi:
+** [[http://www.catb.org/esr/writings/taoup/html/ch13s02.html][The Art of Unix Programming :: A Tale of Five Editors]] :eric:raymond:book:unix:programming:editors:
+** [[http://www.linfo.org/vi/history.html][Bellevue Linux Users Group :: Linux Info :: How to Use Vi :: History]] :linux:history:vi:
 
 * History of emacs
   
@@ -145,9 +192,15 @@
 * Tour of Modes including but not limited to:
 ** Games and toys
 
-   Such as =M-x dunnet=, =M-x snake=, =M-x tetris=, and =M-x butterfly= ([[https://xkcd.com/378/][butterfly]]).
+   Such as =M-x dunnet=, =M-x keywiz=, =M-x snake=, =M-x tetris=, and =M-x butterfly= ([[https://xkcd.com/378/][butterfly]]).
+
+*** [[https://github.com/tkf/org-mode/blob/master/contrib/lisp/org-sudoku.el][org-sudoku]]
+
+    - =M-x org-sudoku-create= :: Create a sudoku board in an org-mode file
+    - =M-x org-sudoku-solve= :: Solve an org-mode sudoku board
 
 *** [[https://www.emacswiki.org/emacs/CategoryGames][EmacsWiki :: CategoryGames]] :emacs:wiki:games:and:amusements:
+*** [[https://www.masteringemacs.org/article/fun-games-in-emacs][Mastering Emacs :: Fun and Games in Emacs]] :mastering:emacs:fun:and:games:
 
 ** artist-mode
 
@@ -168,6 +221,8 @@
 ** org-mode for organization and presentation
 
    Outlining taken to the extreme providing wiki-like and productivity related functionality to emacs including task lists and time tracking.
+
+   Refer to the [[http://orgmode.org/manual/][Org-mode Manual]] on the [[http://orgmode.org/][Org-mode website]].
 
 ** shell and remote access modes
 

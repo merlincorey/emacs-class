@@ -38,6 +38,11 @@
 *** [[https://github.com/robrohan/bestowed][Bestowed - Extremely simple presentation (ppt, keynote, etc) framework for org-mode export]]
 
     Framework to add theming and javascript presentation to org-mode HTML export.
+
+*** [[https://github.com/takaxp/org-tree-slide][org-tree-slide]] :2016:emacs:org:tree:slide:mode:presentation:slides:
+
+    This is a newer and slightly more advanced org-mode presentation mode that is for editable presentations with effects.
+
 * [[./intro-slides.org][intro-slides]]
 
   The Introduction to Emacs class slides.
