@@ -2,7 +2,7 @@
 
   Emacs class notes, scripts, and examples.
 
-  Example configuration tree in [[./dotemacs/]] installable with =sh [[./dotemacs/installer.sh][installer.sh]]=.
+  Example configuration tree in [[./dotemacs/]] installable with =sh installer.sh= ([[./dotemacs/installer.sh][installer.sh]]).
 
 ** History
 
