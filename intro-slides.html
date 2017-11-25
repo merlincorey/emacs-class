@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>intro-slides</title>
+<!-- 2017-11-25 Sat 02:10 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="merlin" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">intro-slides</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. History of editors</a>
+<ul>
+<li><a href="#sec-1-1">1.1. qed</a></li>
+</ul>
+</li>
+<li><a href="#sec-2">2. History of emacs</a>
+<ul>
+<li><a href="#sec-2-1">2.1. Who</a></li>
+<li><a href="#sec-2-2">2.2. What</a></li>
+<li><a href="#sec-2-3">2.3. When</a></li>
+<li><a href="#sec-2-4">2.4. Where</a></li>
+<li><a href="#sec-2-5">2.5. Why</a></li>
+<li><a href="#sec-2-6">2.6. Pictars</a></li>
+</ul>
+</li>
+<li><a href="#sec-3">3. Basic editing commands and common keybindings</a>
+<ul>
+<li><a href="#sec-3-1">3.1. Start emacs with `emacs` or `emacs -nw` for non-windowed mode</a></li>
+<li><a href="#sec-3-2">3.2. Early useful keybindings to choose from</a></li>
+</ul>
+</li>
+<li><a href="#sec-4">4. Windows, buffers, and rings</a>
+<ul>
+<li><a href="#sec-4-1">4.1. Windowing commands</a></li>
+<li><a href="#sec-4-2">4.2. Window commands</a></li>
+<li><a href="#sec-4-3">4.3. Editing commands</a></li>
+</ul>
+</li>
+<li><a href="#sec-5">5. Macros and elisp</a>
+<ul>
+<li><a href="#sec-5-1">5.1. Keyboard macros</a></li>
+<li><a href="#sec-5-2">5.2. ELISP</a></li>
+</ul>
+</li>
+<li><a href="#sec-6">6. Configuration files</a></li>
+<li><a href="#sec-7">7. Emacs package management</a></li>
+<li><a href="#sec-8">8. Tour of Modes including but not limited to:</a>
+<ul>
+<li><a href="#sec-8-1">8.1. Games and toys</a>
+<ul>
+<li><a href="#sec-8-1-1">8.1.1. EmacsWiki :: CategoryGames&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span>&#xa0;<span class="wiki">wiki</span>&#xa0;<span class="games">games</span>&#xa0;<span class="and">and</span>&#xa0;<span class="amusements">amusements</span></span></a></li>
+</ul>
+</li>
+<li><a href="#sec-8-2">8.2. artist-mode</a></li>
+<li><a href="#sec-8-3">8.3. C-mode, python-mode, lisp-mode, etc</a></li>
+<li><a href="#sec-8-4">8.4. directory editor (aka, dired)</a></li>
+<li><a href="#sec-8-5">8.5. man and info</a></li>
+<li><a href="#sec-8-6">8.6. org-mode for organization and presentation</a></li>
+<li><a href="#sec-8-7">8.7. shell and remote access modes</a></li>
+<li><a href="#sec-8-8">8.8. full IDE modes (specifically, SLIME)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> History of editors</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> qed</h3>
+</div>
+</div>
+
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> History of emacs</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Who</h3>
+<div class="outline-text-3" id="text-2-1">
+<dl class="org-dl">
+<dt> Carl Mikkelson </dt><dd>added display-editing to teco. 
+</dd>
+<dt> Richard Stallman </dt><dd>added macro capabilities to teco.
+</dd>
+<dt> Richard Stallman </dt><dd>collected the first group of teco programs.
+</dd>
+<dt> Eugene Ciccarelli </dt><dd>wrote the first introduction to emacs.
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> What</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Emacs was based on teco, an editor for the ITS at MIT's AI lab. and "E"ditor "MAC"ros.
+</p>
+
+<p>
+The machines in question were mainframes and other large machines with shared time access.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> When</h3>
+<div class="outline-text-3" id="text-2-3">
+<dl class="org-dl">
+<dt> Mikkelson  </dt><dd>1972
+</dd>
+<dt> Stallman   </dt><dd>1974
+</dd>
+<dt> Stallman   </dt><dd>1976
+</dd>
+<dt> Ciccarelli </dt><dd>1978
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-sec-2-4" class="outline-3">
+<h3 id="sec-2-4"><span class="section-number-3">2.4</span> Where</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+MIT's AI lab (SAIL)
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-2-5" class="outline-3">
+<h3 id="sec-2-5"><span class="section-number-3">2.5</span> Why</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+Why not?
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-sec-2-6" class="outline-3">
+<h3 id="sec-2-6"><span class="section-number-3">2.6</span> Pictars</h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+Serious hardware runs emacs in microcode on the processor: <a href="./images/symbolics-lisp-machine-poster.jpg">Lisp Machine Poster</a>
+</p>
+
+<p>
+The <a href="./images/space-cadet-keyboard.jpg">Space Cadet Keyboard</a> had quite a few interesting keys and modifiers.
+</p>
+
+<p>
+<a href="./images/symbolics-lisp-nerd.jpg">This nerd</a> is representative of the community using them.
+</p>
+
+<p>
+Emacs can be used for <a href="./images/emacs-video-editing.png">video editing</a> in a graphical environment.
+</p>
+
+<p>
+Traditional <a href="./images/emacs-c-ide.jpg">C IDEs</a> can be emulated in emacs as well, with integrated debugging, source control, etc.
+</p>
+
+<p>
+Datadog released <a href="./images/datadog-mode.png">Datadog Mode</a> for monitoring datadog alert streams in emacs.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Basic editing commands and common keybindings</h2>
+<div class="outline-text-2" id="text-3">
+</div><div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> Start emacs with `emacs` or `emacs -nw` for non-windowed mode</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Emacs can run in a terminal or graphical windowed environment.
+</p>
+
+<p>
+Emacs tutorial can be entered with:
+</p>
+
+<dl class="org-dl">
+<dt> C-h t </dt><dd>Start to tutorial
+</dd>
+<dt> "C-c" </dt><dd>hold CONTROL and press "c"     
+</dd>
+<dt> "C-x" </dt><dd>to hold CONTROL and press "x"
+</dd>
+<dt> "M-x" </dt><dd>to hold META and "x" or press ESCAPE then "x"
+</dd>
+</dl>
+
+<p>
+Remember the <a href="./images/space-cadet-keyboard.jpg">Space Cadet Keyboard</a>.
+</p>
+
+<p>
+Keep a list of 5-10 commands you are learning and work on them only.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> Early useful keybindings to choose from</h3>
+<div class="outline-text-3" id="text-3-2">
+<dl class="org-dl">
+<dt> <code>C-x C-c</code> </dt><dd>Quit
+</dd>
+<dt> <code>C-x C-f</code> </dt><dd>Open file
+</dd>
+<dt> <code>C-x k</code>   </dt><dd>Kill buffer (close it)
+</dd>
+<dt> <code>C-x C-s</code> </dt><dd>Save current buffer
+</dd>
+<dt> <code>C-x s</code>   </dt><dd>Save dirty buffers
+</dd>
+<dt> <code>C-x b</code>   </dt><dd>Switch buffers
+</dd>
+<dt> <code>M-x</code>     </dt><dd>Run emacs lisp function
+</dd>
+<dt> <code>C-g</code>     </dt><dd>"Quit" current command, spam if troubled
+</dd>
+<dt> <code>C-x C-e</code> </dt><dd>Evaluate lisp expression before cursor
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> Windows, buffers, and rings</h2>
+<div class="outline-text-2" id="text-4">
+</div><div id="outline-container-sec-4-1" class="outline-3">
+<h3 id="sec-4-1"><span class="section-number-3">4.1</span> Windowing commands</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+These are commands that deal with managing or creating windows in emacs
+</p>
+
+<dl class="org-dl">
+<dt> <code>C-x o</code> </dt><dd>"Other" window
+</dd>
+<dt> <code>C-x 0</code> </dt><dd>Destroy window
+</dd>
+<dt> <code>C-x 1</code> </dt><dd>Destroy other windows
+</dd>
+<dt> <code>C-x 2</code> </dt><dd>Horizontal split window
+</dd>
+<dt> <code>C-x 3</code> </dt><dd>Vertical split window
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-sec-4-2" class="outline-3">
+<h3 id="sec-4-2"><span class="section-number-3">4.2</span> Window commands</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+These are commands for working within a window in emacs
+</p>
+
+<dl class="org-dl">
+<dt> <code>C-a</code> </dt><dd>Beginning of line
+</dd>
+<dt> <code>C-e</code> </dt><dd>End of line
+</dd>
+<dt> <code>C-v</code> </dt><dd>Scroll page down
+</dd>
+<dt> <code>M-v</code> </dt><dd>Scroll page up
+</dd>
+<dt> <code>M-&lt;</code> </dt><dd>Top of buffer (meta+shift+',')
+</dd>
+<dt> <code>M-&gt;</code> </dt><dd>End of buffer (meta+shift+'.')
+</dd>
+<dt> <code>C-l</code> </dt><dd>Arrange buffer centered on line or top on line
+</dd>
+<dt> <code>C-s</code> </dt><dd>Search forward incremental
+</dd>
+<dt> <code>C-r</code> </dt><dd>Search reverse incremental
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-sec-4-3" class="outline-3">
+<h3 id="sec-4-3"><span class="section-number-3">4.3</span> Editing commands</h3>
+<div class="outline-text-3" id="text-4-3">
+<p>
+These are commands for working with buffers and rings.
+Copied and cut text goes into the kill ring.
+Actions for undoing are also stored in a ring.
+</p>
+
+<dl class="org-dl">
+<dt> <code>C-SPACE</code> </dt><dd>Set Mark (begin selection)
+</dd>
+<dt> <code>C-w</code>     </dt><dd>Cut text
+</dd>
+<dt> <code>M-w</code>     </dt><dd>Copy text
+</dd>
+<dt> <code>C-y</code>     </dt><dd>Paste or "yank"
+</dd>
+<dt> <code>C-k</code>     </dt><dd>Cut ("kill") from cursor to end of line
+</dd>
+<dt> <code>C-x u</code>   </dt><dd>Undo
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-5" class="outline-2">
+<h2 id="sec-5"><span class="section-number-2">5</span> Macros and elisp</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+ELISP code can be written and executed in any buffer.  Keyboard macros can be saved in configuration as emacs-lisp with special syntax.
+</p>
+</div>
+
+<div id="outline-container-sec-5-1" class="outline-3">
+<h3 id="sec-5-1"><span class="section-number-3">5.1</span> Keyboard macros</h3>
+<div class="outline-text-3" id="text-5-1">
+<dl class="org-dl">
+<dt> <code>C-x (</code> </dt><dd>Start keyboard macro
+</dd>
+<dt> <code>C-x )</code> </dt><dd>End keyboard macro
+</dd>
+<dt> <code>C-x e</code> </dt><dd>Execute keyboard macro
+</dd>
+</dl>
+</div>
+</div>
+
+<div id="outline-container-sec-5-2" class="outline-3">
+<h3 id="sec-5-2"><span class="section-number-3">5.2</span> ELISP</h3>
+<div class="outline-text-3" id="text-5-2">
+<dl class="org-dl">
+<dt> <code>C-x C</code> </dt><dd>Execute elisp expression before cursor
+</dd>
+</dl>
+</div>
+</div>
+</div>
+
+<div id="outline-container-sec-6" class="outline-2">
+<h2 id="sec-6"><span class="section-number-2">6</span> Configuration files</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+Emacs is configured with emacs-lisp code in the ".emacs" file.
+</p>
+
+<p>
+Steve Yegge's blog posts on Emacs and its configuration are very useful and were the original guide for my example configuration in <a href="./dotemacs/">./dotemacs/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-7" class="outline-2">
+<h2 id="sec-7"><span class="section-number-2">7</span> Emacs package management</h2>
+<div class="outline-text-2" id="text-7">
+<p>
+Emacs, since version 24, comes with ELPA the Emacs Lisp Package Archive support.
+</p>
+
+<p>
+You can use the package manager by executing `M-x list-packages` and then searching and selecting packages for install.
+</p>
+
+<p>
+There are multiple repositories of packages available which can extend the packages available to you, but require manual installation.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-8" class="outline-2">
+<h2 id="sec-8"><span class="section-number-2">8</span> Tour of Modes including but not limited to:</h2>
+<div class="outline-text-2" id="text-8">
+</div><div id="outline-container-sec-8-1" class="outline-3">
+<h3 id="sec-8-1"><span class="section-number-3">8.1</span> Games and toys</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+Such as <code>M-x dunnet</code>, <code>M-x snake</code>, <code>M-x tetris</code>, and <code>M-x butterfly</code> (<a href="https://xkcd.com/378/">butterfly</a>).
+</p>
+</div>
+
+<div id="outline-container-sec-8-1-1" class="outline-4">
+<h4 id="sec-8-1-1"><span class="section-number-4">8.1.1</span> <a href="https://www.emacswiki.org/emacs/CategoryGames">EmacsWiki :: CategoryGames</a>&#xa0;&#xa0;&#xa0;<span class="tag"><span class="emacs">emacs</span>&#xa0;<span class="wiki">wiki</span>&#xa0;<span class="games">games</span>&#xa0;<span class="and">and</span>&#xa0;<span class="amusements">amusements</span></span></h4>
+</div>
+</div>
+
+<div id="outline-container-sec-8-2" class="outline-3">
+<h3 id="sec-8-2"><span class="section-number-3">8.2</span> artist-mode</h3>
+<div class="outline-text-3" id="text-8-2">
+<p>
+Draw pretty pictures in emacs!
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-8-3" class="outline-3">
+<h3 id="sec-8-3"><span class="section-number-3">8.3</span> C-mode, python-mode, lisp-mode, etc</h3>
+<div class="outline-text-3" id="text-8-3">
+<p>
+Various programming language syntax highlighting and indention modes.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-8-4" class="outline-3">
+<h3 id="sec-8-4"><span class="section-number-3">8.4</span> directory editor (aka, dired)</h3>
+<div class="outline-text-3" id="text-8-4">
+<p>
+Manage directories and permissions from within emacs.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-8-5" class="outline-3">
+<h3 id="sec-8-5"><span class="section-number-3">8.5</span> man and info</h3>
+<div class="outline-text-3" id="text-8-5">
+<p>
+Read system man and info pages in emacs.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-8-6" class="outline-3">
+<h3 id="sec-8-6"><span class="section-number-3">8.6</span> org-mode for organization and presentation</h3>
+<div class="outline-text-3" id="text-8-6">
+<p>
+Outlining taken to the extreme providing wiki-like and productivity related functionality to emacs including task lists and time tracking.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-8-7" class="outline-3">
+<h3 id="sec-8-7"><span class="section-number-3">8.7</span> shell and remote access modes</h3>
+<div class="outline-text-3" id="text-8-7">
+<p>
+Emacs can use TRAMP mode to open files on remote machines over various protocols, even as root with sudo or other users.
+</p>
+</div>
+</div>
+
+<div id="outline-container-sec-8-8" class="outline-3">
+<h3 id="sec-8-8"><span class="section-number-3">8.8</span> full IDE modes (specifically, SLIME)</h3>
+<div class="outline-text-3" id="text-8-8">
+<p>
+Face down, code up.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: merlin</p>
+<p class="date">Created: 2017-11-25 Sat 02:10</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
