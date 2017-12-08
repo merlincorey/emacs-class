@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>intro-slides</title>
-<!-- 2017-11-25 Sat 14:13 -->
+<!-- 2017-12-07 Thu 16:44 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="merlin" />
@@ -208,7 +208,11 @@ for the JavaScript code in this tag.
 <li><a href="#sec-10-4">10.4. directory editor (aka, dired)</a></li>
 <li><a href="#sec-10-5">10.5. man and info</a></li>
 <li><a href="#sec-10-6">10.6. org-mode for organization and presentation</a></li>
-<li><a href="#sec-10-7">10.7. shell and remote access modes</a></li>
+<li><a href="#sec-10-7">10.7. shell and remote access modes</a>
+<ul>
+<li><a href="#sec-10-7-1">10.7.1. Shell mode commands</a></li>
+</ul>
+</li>
 <li><a href="#sec-10-8">10.8. full IDE modes (specifically, SLIME)</a></li>
 </ul>
 </li>
@@ -325,7 +329,7 @@ The same program, under the name ex, works better on typewriter-like terminals; 
 <h3 id="sec-4-1"><span class="section-number-3">4.1</span> Who</h3>
 <div class="outline-text-3" id="text-4-1">
 <dl class="org-dl">
-<dt> Carl Mikkelson </dt><dd>added display-editing to teco. 
+<dt> Carl Mikkelson </dt><dd>added display-editing to teco.
 </dd>
 <dt> Richard Stallman </dt><dd>added macro capabilities to teco.
 </dd>
@@ -433,7 +437,7 @@ Emacs tutorial can be entered with:
 <dl class="org-dl">
 <dt> C-h t </dt><dd>Start to tutorial
 </dd>
-<dt> "C-c" </dt><dd>hold CONTROL and press "c"     
+<dt> "C-c" </dt><dd>hold CONTROL and press "c"
 </dd>
 <dt> "C-x" </dt><dd>to hold CONTROL and press "x"
 </dd>
@@ -586,13 +590,14 @@ ELISP code can be written and executed in any buffer.  Keyboard macros can be sa
 <h3 id="sec-7-2"><span class="section-number-3">7.2</span> ELISP</h3>
 <div class="outline-text-3" id="text-7-2">
 <dl class="org-dl">
-<dt> <code>C-x C</code> </dt><dd>Execute elisp expression before cursor
+<dt> <code>C-x C-e</code> </dt><dd>Execute elisp expression before cursor
+</dd>
+<dt> <code>M-</code> </dt><dd>Read a single emacs list expression in minibuffer and evaluate it
 </dd>
 </dl>
 </div>
 </div>
 </div>
-
 <div id="outline-container-sec-8" class="outline-2">
 <h2 id="sec-8"><span class="section-number-2">8</span> Configuration files</h2>
 <div class="outline-text-2" id="text-8">
@@ -658,7 +663,7 @@ Such as <code>M-x dunnet</code>, <code>M-x keywiz</code>, <code>M-x snake</code>
 <h3 id="sec-10-2"><span class="section-number-3">10.2</span> artist-mode</h3>
 <div class="outline-text-3" id="text-10-2">
 <p>
-Draw pretty pictures in emacs!
+Draw pretty pictures in emacs!  Use <code>M-x artist-mode</code>
 </p>
 </div>
 </div>
@@ -700,17 +705,37 @@ Outlining taken to the extreme providing wiki-like and productivity related func
 <p>
 Refer to the <a href="http://orgmode.org/manual/">Org-mode Manual</a> on the <a href="http://orgmode.org/">Org-mode website</a>.
 </p>
+
+<p>
+Check out the <a href="http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html">Org-mode TODO tutorial</a> as well.
+</p>
 </div>
 </div>
 
 <div id="outline-container-sec-10-7" class="outline-3">
 <h3 id="sec-10-7"><span class="section-number-3">10.7</span> shell and remote access modes</h3>
 <div class="outline-text-3" id="text-10-7">
+</div><div id="outline-container-sec-10-7-1" class="outline-4">
+<h4 id="sec-10-7-1"><span class="section-number-4">10.7.1</span> Shell mode commands</h4>
+<div class="outline-text-4" id="text-10-7-1">
+<dl class="org-dl">
+<dt> <code>C-c C-j</code> </dt><dd>Line unbound mode, so that you can scroll around the buffer like any other text buffer
+</dd>
+<dt> <code>C-c C-k</code> </dt><dd>Bind back to the shell such that up/down/left/right, etc are read by the shell not emacs
+</dd>
+</dl>
+
 <p>
 Emacs can use TRAMP mode to open files on remote machines over various protocols, even as root with sudo or other users.
 </p>
+
+<p>
+&#x2026; WHEN IT WORKS?!
+</p>
 </div>
 </div>
+</div>
+
 
 <div id="outline-container-sec-10-8" class="outline-3">
 <h3 id="sec-10-8"><span class="section-number-3">10.8</span> full IDE modes (specifically, SLIME)</h3>
@@ -724,7 +749,7 @@ Face down, code up.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: merlin</p>
-<p class="date">Created: 2017-11-25 Sat 14:13</p>
+<p class="date">Created: 2017-12-07 Thu 16:44</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
