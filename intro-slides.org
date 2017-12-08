@@ -37,7 +37,7 @@
    Bill Joy in *1976* wrote =vi=, bringing a visual mode based on =em= to =ed=.
 
 ** ex
-   
+
    #+CAPTION: Dennis Ritchie on vi
    #+BEGIN_QUOTE
    The same program, under the name ex, works better on typewriter-like terminals; aside from some fancier commands and better diagnostics, it's essentially ed.
@@ -50,10 +50,10 @@
 ** [[http://www.linfo.org/vi/history.html][Bellevue Linux Users Group :: Linux Info :: How to Use Vi :: History]] :linux:history:vi:
 
 * History of emacs
-  
+
 ** Who
-   
-   - Carl Mikkelson :: added display-editing to teco. 
+
+   - Carl Mikkelson :: added display-editing to teco.
    - Richard Stallman :: added macro capabilities to teco.
    - Richard Stallman :: collected the first group of teco programs.
    - Eugene Ciccarelli :: wrote the first introduction to emacs.
@@ -79,7 +79,7 @@
 
    Why not?
 
-   
+
 
 ** Pictars
 
@@ -103,7 +103,7 @@
    Emacs tutorial can be entered with:
 
    - C-h t :: Start to tutorial
-   - "C-c" :: hold CONTROL and press "c"     
+   - "C-c" :: hold CONTROL and press "c"
    - "C-x" :: to hold CONTROL and press "x"
    - "M-x" :: to hold META and "x" or press ESCAPE then "x"
 
@@ -123,7 +123,7 @@
    - =C-g=     :: "Quit" current command, spam if troubled
    - =C-x C-e= :: Evaluate lisp expression before cursor
 
-* Windows, buffers, and rings 
+* Windows, buffers, and rings
 ** Windowing commands
 
    These are commands that deal with managing or creating windows in emacs
@@ -173,8 +173,8 @@
 
 ** ELISP
 
-   - =C-x C= :: Execute elisp expression before cursor
-
+   - =C-x C-e= :: Execute elisp expression before cursor
+   - =M-= :: Read a single emacs list expression in minibuffer and evaluate it
 * Configuration files
 
   Emacs is configured with emacs-lisp code in the ".emacs" file.
@@ -204,13 +204,13 @@
 
 ** artist-mode
 
-   Draw pretty pictures in emacs!
+   Draw pretty pictures in emacs!  Use =M-x artist-mode=
 
 ** C-mode, python-mode, lisp-mode, etc
 
    Various programming language syntax highlighting and indention modes.
 
-** directory editor (aka, dired) 
+** directory editor (aka, dired)
 
    Manage directories and permissions from within emacs.
 
@@ -224,10 +224,20 @@
 
    Refer to the [[http://orgmode.org/manual/][Org-mode Manual]] on the [[http://orgmode.org/][Org-mode website]].
 
+   Check out the [[http://orgmode.org/worg/org-tutorials/orgtutorial_dto.html][Org-mode TODO tutorial]] as well.
+
 ** shell and remote access modes
+
+*** Shell mode commands
+
+    - =C-c C-j= :: Line unbound mode, so that you can scroll around the buffer like any other text buffer
+    - =C-c C-k= :: Bind back to the shell such that up/down/left/right, etc are read by the shell not emacs
 
    Emacs can use TRAMP mode to open files on remote machines over various protocols, even as root with sudo or other users.
 
-** full IDE modes (specifically, SLIME) 
+   ... WHEN IT WORKS?!
+
+
+** full IDE modes (specifically, SLIME)
 
    Face down, code up.
