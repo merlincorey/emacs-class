@@ -174,7 +174,7 @@
 ** ELISP
 
    - =C-x C-e= :: Execute elisp expression before cursor
-   - =M-= :: Read a single emacs list expression in minibuffer and evaluate it
+   - =M-= :: Read a single emacs lisp expression in minibuffer and evaluate it
 * Configuration files
 
   Emacs is configured with emacs-lisp code in the ".emacs" file.
